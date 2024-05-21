@@ -1,6 +1,7 @@
 body {
     background-color: #fffded;
     margin: 20px;
+    color: blue;
 }
 h1 {
     text-align: center;
@@ -20,12 +21,13 @@ label, input, select, textarea {
 input[type="text"], input[type="number"], select, textarea {
     padding: 8px;
     border: 1px solid #ccc;
-    border-radius: 5px;
-    
+
 }
 #eletkor{
     width: 20px;
     display: table-row;   
+    margin-bottom: 1%;
+    margin-left: 10%;
 }
 .furdo{
     margin-top: 1%;
@@ -47,9 +49,6 @@ input[type="text"], input[type="number"], select, textarea {
     margin-right: 10px;
 }
 button {
-    background: blue;
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
 }
