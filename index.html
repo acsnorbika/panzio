@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>Panzió - szobafoglalás</title>
+</head>
+<body>
+    <h1>Panzió - szobafoglalás</h1>
+    <form id="urlap">
+        <strong><label for="erkezes">Érkezés dátuma:</label></strong>
+        <input type="text" id="erkezes" name="erkezes" placeholder="éééé.hh.nn.">
+        <strong><label for="tavozas">Távozás dátuma:</label></strong>
+        <input type="text" id="tavozas" name="tavozas" placeholder="éééé.hh.nn.">
+        <strong><label for="szobatipus">Szoba típusa:</label></strong>
+        <div class="radio-group">
+            <label><input type="radio" name="szobatipus" value="9000" checked>Egyágyas - 9.000 Ft/éj</label>
+            <label><input type="radio" name="szobatipus" value="15000">Kétágyas - 15.000 Ft/éj</label>
+            <label><input type="radio" name="szobatipus" value="18000">Kétágyas 1 pótággyal - 18.000 Ft/éj</label>
+            <label><input type="radio" name="szobatipus" value="21000">Kétágyas 2 pótággyal - 21.000 Ft/éj</label>
+        </div>
+        <strong><label for="vendegek">Vendégek száma:</label></strong>
+        <select id="vendegek" name="vendegek">
+            <option value="1">1 fő</option>
+            <option value="2" selected>2 fő</option>
+            <option value="3">3 fő</option>
+            <option value="4">4 fő</option>
+        </select>
+        <strong><label>Vendégek életkora:</label></strong>
+        
+        <input id="eletkor" type="text" name="ev1" placeholder="év"> év
+        <input id="eletkor" type="text" name="ev2" placeholder="év">
+        év
+        <input id="eletkor" type="text" name="ev3" placeholder="év">
+        év
+        <input id="eletkor" type="text" name="ev4" placeholder="év">
+        év
+        <strong><label for="kaja">Ellátás:</label></strong>
+        <div class="radiogomb">
+            <label><input type="radio" name="kaja" value="900" checked>Reggeli - 900 Ft/nap/fő</label>
+            <label><input type="radio" name="kaja" value="2900">Félpanzió - 2.900 Ft/nap/fő</label>
+            <label><input type="radio" name="kaja" value="4900">Teljes panzió - 4.900 Ft/nap/fő</label>
+        </div>
+        <strong><label for="furdo">Fürdő szolgáltatások:</label></strong>
+        <div class="checkbox">
+            <label><input type="checkbox" name="furdo" value="800">Beltéri medencék - 800 Ft/nap/fő</label>
+            <label><input type="checkbox" name="furdo" value="800">Kültéri medencék - 800 Ft/nap/fő</label>
+            <label><input type="checkbox" name="furdo" value="800">Szauna belépő - 800 Ft/nap/fő</label>
+            <label><input type="checkbox" name="furdo" value="2000" checked>Teljes belépő - 2.000
+                Ft/nap/fő</label>
+        </div>
+        <strong><label for="egyebek">Egyéb kérés, kívánság:</label></strong>
+        <textarea id="egyebek" name="egyeb"></textarea>
+        <button type="button">Költségkalkuláció</button>
+    </form>
+</body>
+
+</html>
