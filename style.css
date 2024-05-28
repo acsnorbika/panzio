@@ -84,15 +84,22 @@ button {
     .oszlop-container{
         flex-direction: column;
         flex-wrap: wrap;
-        align-items: center;
+        justify-content:space-between;
     }
     .jobb{
         width:65%;
+        
+    }
+    #eletkor-group{
+        width: 150%;
     }
     .bal{
         margin-bottom: 10px;
     }
     .radiogomb,.checkbox{
         flex-direction: column;
+    }
+    textarea{
+        width: 100%;
     }
 }
