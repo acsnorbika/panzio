@@ -12,6 +12,19 @@ function kalkulacio(){
     var kaja = kajaElem.value
     var kajaSzoveg = kajaElem.parentNode.textContent.split(' - ')[0]
 
+    var furdoelem = document.querySelectorAll('input[name="furdo"]:checked')
+    var furdo = 0
+    var furdoSzoveg= []
+    for (var i = 0; i < furdoelem.length; i++) {
+        furdo += Number(furdoelem[i].value)
+        furdoSzoveg.push(furdoelem[i].parentNode.textContent.split(' - ')[0])
+    }
+
+    var szobakoltseg = Number(szobatipus)
+    var kajakoltseg = Number(kaja)
+    var furdokoltseg = Number(furdo)
+
+    var teljesosszeg = szobakoltseg + kajakoltseg + furdokoltseg
 
     var foglalasadat=
         `Kedves Vendégünk!
