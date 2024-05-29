@@ -19,7 +19,9 @@ form {
     background: rgb(240,240,240);
     padding: 20px;
 }
-
+textarea{
+    resize: none;
+}
 input[type="text"], input[type="number"]{
     padding: 3px;
     margin: 0.5%;
