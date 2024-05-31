@@ -1,3 +1,5 @@
+document.querySelector('button').onclick=kalkulacio
+
 function kalkulacio(){
     var erkezes=document.querySelector('#erkezes').value
     var tavozas=document.querySelector('#tavozas').value
@@ -8,7 +10,7 @@ function kalkulacio(){
    
     var vendegek = document.querySelector('#vendegek').value
     
-    var kajaElem = document.querySelector('input[name="kaja"]:checked').value
+    var kajaElem = document.querySelector('input[name="kaja"]:checked')
     var kaja = kajaElem.value
     var kajaSzoveg = kajaElem.parentNode.textContent.split(' - ')[0]
 
@@ -20,13 +22,18 @@ function kalkulacio(){
         furdoSzoveg.push(furdoelem[i].parentNode.textContent.split(' - ')[0])
     }
 
-    var szobakoltseg = Number(szobatipus)
-    var kajakoltseg = Number(kaja)
-    var furdokoltseg = Number(furdo)
+    var datum1=new Date(erkezes)
+    var datum2=new Date(tavozas)
+    var datumkulonbseg = Math.abs(datum2-datum1)
+    var napkulonbseg= Math.ceil(datumkulonbseg/(1000*60*60*24))
+
+    var szobakoltseg = szobatipus*napkulonbseg
+    var kajakoltseg = kaja *vendegek*napkulonbseg
+    var furdokoltseg = furdo *vendegek*napkulonbseg
 
     var teljesosszeg = szobakoltseg + kajakoltseg + furdokoltseg
-
-    var foglalasadat=
+    var furdoelem=furdoSzoveg.join(", ")
+    const foglalasadat=
         `Kedves Vendégünk!
         Tájékoztatjuk a sikeres foglalásról.
         Érkezés: ${erkezes}

@@ -22,7 +22,7 @@ form {
 textarea{
     resize: none;
 }
-input[type="text"], input[type="number"]{
+input[type="date"], input[type="number"]{
     padding: 3px;
     margin: 0.5%;
     box-sizing: border-box;
