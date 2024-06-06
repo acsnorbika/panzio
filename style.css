@@ -94,9 +94,13 @@ button {
     }
     #eletkor-group{
         width: 150%;
+        flex-direction: column;
     }
     .bal{
         margin-bottom: 10px;
+    }
+    input#eletkor{
+        width: 20%;
     }
     .radiogomb,.checkbox{
         flex-direction: column;
