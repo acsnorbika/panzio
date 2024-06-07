@@ -31,7 +31,7 @@ function kalkulacio() {
     var vendegek = document.querySelector('#vendegek').value;
     var eletkorInputs = document.querySelectorAll('#eletkor-group input');
     for (var i = 0; i < vendegek; i++) {
-        if (parseInt(eletkorInputs[i].value) < 16) {
+        if (Number(eletkorInputs[i].value) < 16) {
             alert("A pótágyak csak 16 év alatti vendégeknek vehetők igénybe.");
             return;
         }
@@ -52,7 +52,7 @@ function kalkulacio() {
     var datum1 = new Date(erkezes);
     var datum2 = new Date(tavozas);
     var datumkulonbseg = Math.abs(datum2 - datum1);
-    var napkulonbseg = Math.ceil(datumkulonbseg / (1000 * 60 * 60 * 24));
+    var napkulonbseg = Math(datumkulonbseg / (1000 * 60 * 60 * 24));
 
     var szobakoltseg = szobatipus * napkulonbseg;
     var kajakoltseg = kaja * vendegek * napkulonbseg;
