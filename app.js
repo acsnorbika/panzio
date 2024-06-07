@@ -30,12 +30,6 @@ function kalkulacio() {
 
     var vendegek = document.querySelector('#vendegek').value;
     var eletkorInputs = document.querySelectorAll('#eletkor-group input');
-    for (var i = 0; i < vendegek; i++) {
-        if (Number(eletkorInputs[i].value) < 16) {
-            alert("A pótágyak csak 16 év alatti vendégeknek vehetők igénybe.");
-            return;
-        }
-    }
 
     var kajaElem = document.querySelector('input[name="kaja"]:checked');
     var kaja = kajaElem.value;
