@@ -37,8 +37,6 @@ function kalkulacio() {
         }
     }
 
-
-
     var kajaElem = document.querySelector('input[name="kaja"]:checked');
     var kaja = kajaElem.value;
     var kajaSzoveg = kajaElem.parentNode.textContent.split(' - ')[0];
@@ -73,7 +71,6 @@ function kalkulacio() {
     Ellátás: ${kajaSzoveg}
     Igényelt szolgáltatások: ${furdoSzovegList}
     A teljes összeg: ${teljesosszeg} Ft
-
     Köszönjük a megrendelését!
     `;
 
