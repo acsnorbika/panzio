@@ -29,7 +29,7 @@ function kalkulacio() {
     var szobatipusSzoveg = szobatipusElem.parentNode.textContent.split(' - ')[0];
 
     var vendegek = document.querySelector('#vendegek').value;
-    var eletkorInputs = document.querySelectorAll('#eletkor-group input');
+    
 
     var kajaElem = document.querySelector('input[name="kaja"]:checked');
     var kaja = kajaElem.value;
